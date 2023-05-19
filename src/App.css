@@ -1,38 +1,107 @@
-.App {
+.header-container {
+  display: flex;
+  padding-left: 100px;
+  padding-right: 100px;
+  align-items: center;
+  background-color: #d6cda7;
+  height: 7%;
+}
+
+.header-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.header-actions h2 {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.header-actions a {
+  margin: 10px;
+  font-family: sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all .5s ease-out;
+}
+
+.header-actions a:hover {
+  color: aqua;
+}
+
+.action-button:hover {
+  border: 1px solid aqua;
+}
+
+.title-text {
+  font-family: Impact, serif;
+  font-weight: 300;
+}
+
+.action-button {
+  padding: 5px 20px;
+  border: 1px solid #000;
+  border-radius: 100px;
+}
+
+body {
+  background-color: #fff4c5;
+}
+
+.body {
+  padding: 4% 20%;
+}
+
+.content-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-body {
+  width: 200px;
+  height: 250px;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+  padding: 10px;
+  transition: all .5s ease-out;
+}
+
+.card-body:hover {
+  background-color: #dddddd;
+  margin: 10px 20px 20px 20px;
+}
+
+.card-title {
+  margin: 10px;
+  font-size: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-body img {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height: 50%;
+  display: block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-description {
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.truncate {
+  background: inherit;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.truncate p {
+  margin: 0;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
