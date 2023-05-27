@@ -11,6 +11,7 @@
   margin-left: auto;
   display: flex;
   align-items: center;
+  color: white;
 }
 
 .header-actions h2 {
@@ -104,4 +105,12 @@ body {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.auth-reg-body {
+  display: flex;
+}
+
+.auth-reg-body div {
+  margin: 20px;
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import imgSourse from './img.png'
+import imgSourse from '../img.png'
 
 export default class MCard extends Component {
   render() {
