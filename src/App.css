@@ -28,11 +28,11 @@
 }
 
 .header-actions a:hover {
-  color: aqua;
+  color: rgb(197, 130, 114);
 }
 
 .action-button:hover {
-  border: 1px solid aqua;
+  border: 1px solid rgb(197, 130, 114);
 }
 
 .title-text {
@@ -107,10 +107,10 @@ body {
   overflow: hidden;
 }
 
-.auth-reg-body {
-  display: flex;
+a:link, a:visited, a:focus {
+  color: black;
 }
 
-.auth-reg-body div {
-  margin: 20px;
+.video-player {
+  max-width: 70%;
 }

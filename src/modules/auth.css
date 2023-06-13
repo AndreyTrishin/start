@@ -1,0 +1,33 @@
+.auth-reg-body {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.auth-reg-body div {
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+.auth-reg-body div button {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: all .5s ease-out;
+    color: black;
+    background-color: #fff4c5;
+    
+}
+.auth-reg-body div button:hover {
+    background-color: white;
+}
+
+.auth-reg-body div input {
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}

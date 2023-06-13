@@ -6,9 +6,11 @@ import AboutPage from './modules/AboutPage';
 import './App.css'
 import AddCoursePage from './modules/AddCoursePage';
 import AuthPage from './modules/AuthPage';
+import UsersPage from './modules/UsersPage';
+import CoursePage from './modules/CoursePage';
+import ListCoursePage from './modules/ListCoursePage';
 
 function App() {
-  // GetUsers();
   return (
     <BrowserRouter>
       <HeaderBlock />
@@ -18,6 +20,9 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/addCource" element={<AddCoursePage />} />
           <Route path="/auth" element={<AuthPage />} />
+          <Route path="/users" element={<UsersPage />} />
+          <Route path="/course" element={<CoursePage />} />
+          <Route path="/courses/" element={<ListCoursePage />} />
         </Routes>
       </div>
     </BrowserRouter>

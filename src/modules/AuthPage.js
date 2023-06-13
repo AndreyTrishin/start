@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import { RegisterUser, Auth } from '../APIRequest'
-import '../App.css'
+import './auth.css'
 import { useCookies } from "react-cookie";
 import { useNavigate } from "react-router-dom";
 
@@ -31,15 +31,15 @@ export default function AuthPage(props) {
     login = e.currentTarget.value;
   }
   var register = () => {
-    var user = RegisterUser(name, password, eMail);
-    console.log(user);
+    RegisterUser(name, password, eMail);
   }
   var auth = () => {
     Auth(login, authPassword).then((data) => {
+      console.log(data);
       if (data) {
         setCookie('name', data.name);
         setCookie('email', data.email);
-        setCookie('roleName', data.roleName);
+        setCookie('roleName', data.role.roleName);
         navigate('/');
       } else {
         alert('Неверный логин или пароль');
@@ -60,7 +60,7 @@ export default function AuthPage(props) {
         <button onClick={register}>Регистрация</button>
       </div>
 
-      <div>
+      <div className='auth-div'>
         <h3>Логин</h3>
         <input type='text' onChange={onChangeHandlerLogin} />
         <h3>Пароль</h3>
