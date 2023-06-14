@@ -17,7 +17,7 @@ export default function CoursePage() {
 
         
       }
-      <video className='video-player' src='https://localhost:7225/api/Content/GetVideo?id=23' controls="controls"></video>
+      <video className='video-player' src={'https://localhost:7225/api/Content/GetVideo?id=' + location.state.course.id} controls="controls"></video>
     </div>
   )
 }

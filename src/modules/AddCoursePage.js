@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { CreateCourse } from '../APIRequest';
 import { useNavigate } from "react-router-dom";
 
@@ -14,7 +14,8 @@ export default function AddCoursePage() {
   }
 
   var onFileChangeHandler = (e) => {
-    file = e.currentTarget.files[0];
+    // if(e.currentTarget.files[0].type === 'video/mp4') {
+      file = e.currentTarget.files[0];
   }
   const navigate = useNavigate();
 
